@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="401.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartWindowController">
+   <children>
+      <Button fx:id="Start" layoutX="266.0" layoutY="365.0" mnemonicParsing="false" onAction="#Start" text="Start" />
+      <TextField fx:id="myAlt" layoutX="70.0" layoutY="40.0" />
+      <Label layoutX="9.0" layoutY="40.0" text="altitude" />
+      <Label layoutX="14.0" layoutY="80.0" text="Speed" />
+      <TextField fx:id="mySpeed" layoutX="70.0" layoutY="80.0" />
+      <Label layoutX="17.0" layoutY="120.0" text="Fuel" />
+      <ChoiceBox fx:id="myFuel" layoutX="70.0" layoutY="120.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="myThrottle" layoutX="70.0" layoutY="160.0" prefWidth="150.0" />
+      <Label layoutX="7.0" layoutY="160.0" text="Throttle" />
+      <ChoiceBox fx:id="myPlane" layoutX="70.0" layoutY="240.0" onMouseClicked="#UpdateChoice" prefWidth="150.0" />
+      <Label layoutX="10.0" layoutY="245.0" text="Aircraft" />
+      <Label layoutX="229.0" layoutY="125.0" text="\%" />
+      <Label layoutX="229.0" layoutY="165.0" text="\%" />
+      <ChoiceBox fx:id="myMap" layoutX="179.0" layoutY="320.0" prefWidth="150.0" />
+      <Label layoutX="141.0" layoutY="325.0" text="Map" />
+      <Label layoutX="265.0" layoutY="40.0" text="altitude" />
+      <TextField fx:id="myAlt1" layoutX="327.0" layoutY="40.0" />
+      <Label layoutX="271.0" layoutY="80.0" text="Speed" />
+      <Label layoutX="278.0" layoutY="120.0" text="Fuel" />
+      <ChoiceBox fx:id="myFuel1" layoutX="327.0" layoutY="120.0" prefWidth="150.0" />
+      <Label layoutX="485.0" layoutY="125.0" text="\%" />
+      <ChoiceBox fx:id="myThrottle1" layoutX="327.0" layoutY="160.0" prefWidth="150.0" />
+      <Label layoutX="485.0" layoutY="165.0" text="\%" />
+      <Label layoutX="264.0" layoutY="160.0" text="Throttle" />
+      <Label layoutX="267.0" layoutY="245.0" text="Aircraft" />
+      <ChoiceBox fx:id="myPlane1" layoutX="327.0" layoutY="240.0" onMouseClicked="#UpdateChoice1" prefWidth="150.0" />
+      <TextField fx:id="mySpeed1" layoutX="327.0" layoutY="80.0" />
+      <Label layoutX="118.0" layoutY="14.0" text="Your team" />
+      <Label layoutX="378.0" layoutY="14.0" text="Enemy" />
+      <Label layoutX="5.0" layoutY="325.0" text="Number:" />
+      <Label layoutX="338.0" layoutY="325.0" text="Number:" />
+      <ChoiceBox fx:id="number" layoutX="69.0" layoutY="320.0" prefHeight="29.0" prefWidth="59.0" />
+      <ChoiceBox fx:id="number1" layoutX="402.0" layoutY="320.0" prefHeight="29.0" prefWidth="59.0" />
+      <Label layoutX="16.0" layoutY="285.0" text="Load:" />
+      <Label layoutX="274.0" layoutY="285.0" text="Load:" />
+      <ChoiceBox fx:id="LoadChoice" layoutX="70.0" layoutY="280.0" onMouseClicked="#LoadChoice" prefWidth="150.0" />
+      <ChoiceBox fx:id="LoadChoice1" layoutX="327.0" layoutY="280.0" onMouseClicked="#LoadChoice1" prefWidth="150.0" />
+      <Button fx:id="Setting" layoutX="194.0" layoutY="365.0" mnemonicParsing="false" onAction="#Setting" text="Setting" />
+      <Label layoutX="10.0" layoutY="201.0" text="Faction" />
+      <ChoiceBox fx:id="myFaction" layoutX="70.0" layoutY="200.0" onMouseClicked="#UpdateAircraft" prefWidth="150.0" />
+      <ChoiceBox fx:id="myFaction1" layoutX="327.0" layoutY="200.0" onMouseClicked="#UpdateAircraft1" prefWidth="150.0" />
+      <Label layoutX="267.0" layoutY="201.0" text="Faction" />
+   </children>
+</AnchorPane>
