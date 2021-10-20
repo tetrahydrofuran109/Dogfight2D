@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>AIM-9P</name>
+    <property>InfraredAAM</property>
+    <mass>76.8</mass>
+    <refArea>0.0127</refArea>
+    <cl>6.37</cl>
+    <duration>600</duration>
+    <subSonicCd0>1.5</subSonicCd0>
+    <superSonicCd0>1.5</superSonicCd0>
+    <maxLoadFactor>22</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>17758</thrustA>
+    <thrustATime>110</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>1</guideTimeInterval>
+    <guideField>32</guideField>
+    <lockRange>8500</lockRange>
+    <lockField>10</lockField>
+    <TNTMass>9.2</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

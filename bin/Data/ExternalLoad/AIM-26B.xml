@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>AIM-26B</name>
+    <property>SemiRadarAAM</property>
+    <mass>117</mass>
+    <refArea>0.066</refArea>
+    <cl>0.63</cl>
+    <duration>1050</duration>
+    <subSonicCd0>0.3</subSonicCd0>
+    <superSonicCd0>0.3</superSonicCd0>
+    <maxLoadFactor>28</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>27359</thrustA>Z
+    <thrustATime>105</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>60</guideField>
+    <lockRange>6120</lockRange>
+    <lockField>60</lockField>
+    <TNTMass>22</TNTMass>
+    <explosionRange>18.3</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

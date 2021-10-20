@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SettingData>
+    <Setting>
+        <airbrakeCode>G</airbrakeCode>
+        <changeWeaponCode>Q</changeWeaponCode>
+        <commandCodeDown>P</commandCodeDown>
+        <commandCodeUP>O</commandCodeUP>
+        <diveCode>S</diveCode>
+        <effectAudioVolume>1.0</effectAudioVolume>
+        <engineAudioVolume>0.0</engineAudioVolume>
+        <firingCode>SPACE</firingCode>
+        <gunAudioVolume>1.0</gunAudioVolume>
+        <haveEffectAudio>false</haveEffectAudio>
+        <haveEngineAudio>false</haveEngineAudio>
+        <haveGunAudio>false</haveGunAudio>
+        <haveLaunchAudio>false</haveLaunchAudio>
+        <haveWarningAudio>false</haveWarningAudio>
+        <helmetAimingCodeDown>M</helmetAimingCodeDown>
+        <helmetAimingCodeUP>N</helmetAimingCodeUP>
+        <launchAudioVolume>1.0</launchAudioVolume>
+        <launchCode>L</launchCode>
+        <openInfraredModeCode>T</openInfraredModeCode>
+        <openRadarModeCode>R</openRadarModeCode>
+        <pitchCode>W</pitchCode>
+        <throttleDownCode>A</throttleDownCode>
+        <throttleUPCode>D</throttleUPCode>
+        <trimCode>E</trimCode>
+        <warningAudioVolume>1.0</warningAudioVolume>
+    </Setting>
+</SettingData>

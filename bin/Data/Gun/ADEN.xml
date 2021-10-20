@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GunData>
+  <Gun>
+    <bulletMass>0.237</bulletMass>
+    <initialSpeed>805</initialSpeed>
+    <shootInterval>1</shootInterval>
+    <cartridge>30</cartridge>
+    <flameColor>Green</flameColor>
+    <gunPower>58</gunPower>
+    <piercingArmor>35</piercingArmor>
+    <audio>30mmCannon</audio>
+  </Gun>
+</GunData>

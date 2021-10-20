@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadarData>
+  <Radar>
+    <maxDetectRange>44000</maxDetectRange>
+    <maxDetectField>60</maxDetectField>
+    <scanInterval>3</scanInterval>
+    <maxLookDownAngle>45</maxLookDownAngle>
+    <maxTagertNumber>3</maxTagertNumber>
+    <maxIndicateRadarAAM>1</maxIndicateRadarAAM>
+    <showDistanceRange>22000</showDistanceRange>
+    <hasIRST>false</hasIRST>
+    <IFFDistance>10000</IFFDistance>
+    <radarWarningDistance>4000</radarWarningDistance>
+  </Radar>
+</RadarData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineData>
+  <Engine>
+    <engineType>Jet</engineType>
+    <haveWEP>true</haveWEP>
+    <ABThrust>10625</ABThrust>
+    <ABThrust>10713</ABThrust>
+    <ABThrust>10800</ABThrust>
+    <ABThrust>10950</ABThrust>
+    <ABThrust>11100</ABThrust>
+    <ABThrust>11631</ABThrust>
+    <ABThrust>12162</ABThrust>
+    <ABThrust>12777</ABThrust>
+    <ABThrust>13392</ABThrust>
+    <ABThrust>13988</ABThrust>
+    <ABThrust>15014</ABThrust>
+    <ABThrust>14710</ABThrust>
+    <ABThrust>14406</ABThrust>
+    <ABThrust>17000</ABThrust>
+    <ABThrust>20000</ABThrust>
+    <ABThrust>23000</ABThrust>
+    <ABThrust>26000</ABThrust>
+    <ABThrust>29000</ABThrust>
+    <ABThrust>30000</ABThrust>
+    <ABThrust>33000</ABThrust>
+    <ABThrust>35000</ABThrust>
+    <engineType>Jet</engineType>
+    <fuelConsumptionPerThrustAB>2</fuelConsumptionPerThrustAB>
+    <fuelConsumptionRatePerThrust>0.95</fuelConsumptionRatePerThrust>
+    <maxThrust>8300</maxThrust>
+    <maxThrust>8400</maxThrust>
+    <maxThrust>8500</maxThrust>
+    <maxThrust>8600</maxThrust>
+    <maxThrust>8700</maxThrust>
+    <maxThrust>8800</maxThrust>
+    <maxThrust>8900</maxThrust>
+    <maxThrust>9000</maxThrust>
+    <maxThrust>10000</maxThrust>
+    <maxThrust>11000</maxThrust>
+    <maxThrust>12000</maxThrust>
+    <maxThrust>12000</maxThrust>
+    <maxThrust>12000</maxThrust>
+    <maxThrust>12000</maxThrust>
+    <maxThrust>12000</maxThrust>
+    <maxThrust>12000</maxThrust>
+  </Engine>
+</EngineData>

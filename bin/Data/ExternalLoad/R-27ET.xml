@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-27ET</name>
+    <property>InfraredAAM</property>
+    <mass>354</mass>
+    <refArea>0.0415</refArea>
+    <cl>2.89</cl>
+    <duration>1500</duration>
+    <subSonicCd0>0.92</subSonicCd0>
+    <superSonicCd0>0.92</superSonicCd0>
+    <maxLoadFactor>20</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>59000</thrustA>
+    <thrustATime>129</thrustATime>
+    <thrustB>34776</thrustB>
+    <thrustBTime>250</thrustBTime>
+    <guideTimeInterval>1</guideTimeInterval>
+    <guideField>55</guideField>
+    <lockRange>12000</lockRange>
+    <lockField>55</lockField>
+    <TNTMass>39</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HelmetData>
+  <Helmet>
+    <viewField>180</viewField>
+    <trackRate>20</trackRate>
+    <allowedWeapon>AIM-9D</allowedWeapon>
+    <allowedWeapon>AIM-7E-2</allowedWeapon>
+  </Helmet>
+</HelmetData>
