@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineData>
+  <Engine>
+    <haveWEP>false</haveWEP>
+    <engineType>Jet</engineType>
+    <maxThrust>2677</maxThrust>
+    <maxThrust>2700</maxThrust>
+    <maxThrust>2775</maxThrust>
+    <maxThrust>2900</maxThrust>
+    <maxThrust>3025</maxThrust>
+    <maxThrust>3150</maxThrust>
+    <maxThrust>3275</maxThrust>
+    <maxThrust>3400</maxThrust>
+    <maxThrust>3525</maxThrust>
+    <maxThrust>3550</maxThrust>
+    <maxThrust>3525</maxThrust>
+    <fuelConsumptionRatePerThrust>1</fuelConsumptionRatePerThrust>
+  </Engine>
+</EngineData>

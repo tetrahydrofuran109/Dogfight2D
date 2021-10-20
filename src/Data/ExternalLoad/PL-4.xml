@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>PL-4</name>
+    <property>SemiRadarAAM</property>
+    <mass>204</mass>
+    <refArea>0.0327</refArea>
+    <cl>4.18</cl>
+    <duration>1500</duration>
+    <subSonicCd0>0.58</subSonicCd0>
+    <superSonicCd0>0.36</superSonicCd0>
+    <maxLoadFactor>20</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>35018</thrustA>
+    <thrustATime>136</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>60</guideField>
+    <lockRange>12501</lockRange>
+    <lockField>60</lockField>
+    <TNTMass>29.5</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

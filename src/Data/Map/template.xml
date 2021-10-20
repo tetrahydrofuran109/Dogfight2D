@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MapData>
+  <Map>
+    <objectNameList>/Image/Background/RunWayA.png</objectNameList>
+    <objectXList>550</objectXList>
+    <objectYList>0</objectYList>
+    <mapSize>31000</mapSize>
+    <mapName>template</mapName>
+  </Map>
+</MapData>

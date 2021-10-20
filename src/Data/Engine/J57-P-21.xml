@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineData>
+  <Engine>
+    <haveWEP>true</haveWEP>
+    <ABThrust>7248</ABThrust>
+    <ABThrust>7250</ABThrust>
+    <ABThrust>7260</ABThrust>
+    <ABThrust>7270</ABThrust>
+    <ABThrust>7280</ABThrust>
+    <ABThrust>7290</ABThrust>
+    <ABThrust>7300</ABThrust>
+    <ABThrust>7310</ABThrust>
+    <ABThrust>7320</ABThrust>
+    <ABThrust>7334</ABThrust>
+    <ABThrust>7400</ABThrust>
+    <ABThrust>9900</ABThrust>
+    <ABThrust>9900</ABThrust>
+    <ABThrust>10000</ABThrust>
+    <ABThrust>10000</ABThrust>
+    <ABThrust>10000</ABThrust>
+    <engineType>Jet</engineType>
+    <fuelConsumptionPerThrustAB>1.95</fuelConsumptionPerThrustAB>
+    <fuelConsumptionRatePerThrust>0.82</fuelConsumptionRatePerThrust>
+    <maxThrust>4621</maxThrust>
+    <maxThrust>4631</maxThrust>
+    <maxThrust>4641</maxThrust>
+    <maxThrust>4651</maxThrust>
+    <maxThrust>4661</maxThrust>
+    <maxThrust>4671</maxThrust>
+    <maxThrust>4681</maxThrust>
+    <maxThrust>4691</maxThrust>
+    <maxThrust>4701</maxThrust>
+    <maxThrust>4711</maxThrust>
+    <maxThrust>4721</maxThrust>
+    <maxThrust>4731</maxThrust>
+    <maxThrust>4741</maxThrust>
+    <maxThrust>4751</maxThrust>
+    <maxThrust>4761</maxThrust>
+    <maxThrust>4771</maxThrust>
+  </Engine>
+</EngineData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>PL-5</name>
+    <property>InfraredAAM</property>
+    <mass>88.5</mass>
+    <refArea>0.0127</refArea>
+    <cl>6.01</cl>
+    <duration>600</duration>
+    <subSonicCd0>1.5</subSonicCd0>
+    <superSonicCd0>1.5</superSonicCd0>
+    <maxLoadFactor>18</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>12785</thrustA>
+    <thrustATime>250</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>1</guideTimeInterval>
+    <guideField>40</guideField>
+    <lockRange>8530</lockRange>
+    <lockField>10</lockField>
+    <TNTMass>11.4</TNTMass>
+    <explosionRange>5.2</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-530</name>
+    <property>SemiRadarAAM</property>
+    <mass>195</mass>
+    <refArea>0.0531</refArea>
+    <cl>1.94</cl>
+    <duration>1500</duration>
+    <subSonicCd0>0.55</subSonicCd0>
+    <superSonicCd0>0.55</superSonicCd0>
+    <maxLoadFactor>15</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>21000</thrustA>
+    <thrustATime>135</thrustATime>
+    <thrustB>4900</thrustB>
+    <thrustBTime>325</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>60</guideField>
+    <lockRange>9000</lockRange>
+    <lockField>60</lockField>
+    <TNTMass>30.3</TNTMass>
+    <explosionRange>10.5</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

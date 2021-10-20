@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>AIM-9L</name>
+    <property>InfraredAAM</property>
+    <mass>84.3</mass>
+    <refArea>0.0127</refArea>
+    <cl>11.13</cl>
+    <duration>600</duration>
+    <subSonicCd0>1.5</subSonicCd0>
+    <superSonicCd0>1.5</superSonicCd0>
+    <maxLoadFactor>35</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>11809</thrustA>
+    <thrustATime>262</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>0</guideTimeInterval>
+    <guideField>40</guideField>
+    <lockRange>9150</lockRange>
+    <lockField>35</lockField>
+    <TNTMass>9.24</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

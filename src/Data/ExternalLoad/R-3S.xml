@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-3S</name>
+    <property>InfraredAAM</property>
+    <mass>74</mass>
+    <refArea>0.0127</refArea>
+    <cl>3.35</cl>
+    <duration>500</duration>
+    <subSonicCd0>1.5</subSonicCd0>
+    <superSonicCd0>1.5</superSonicCd0>
+    <maxLoadFactor>12</maxLoadFactor>
+    <maxAttackField>45</maxAttackField>
+    <thrustA>17136</thrustA>
+    <thrustATime>110</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>25</guideField>
+    <lockRange>7600</lockRange>
+    <lockField>4</lockField>
+    <TNTMass>9.2</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

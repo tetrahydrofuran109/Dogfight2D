@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MapData>
+  <Map>
+    <objectNameList>/Image/Map/Korea1.png</objectNameList>
+    <objectNameList>/Image/Map/Korea2.png</objectNameList>
+    <objectNameList>/Image/Map/Korea3.png</objectNameList>
+    <objectNameList>/Image/Map/Korea4.png</objectNameList>
+    <objectNameList>/Image/Map/Korea5.png</objectNameList>
+    <objectNameList>/Image/Map/Korea6.png</objectNameList>
+    <objectNameList>/Image/Map/Korea7.png</objectNameList>
+    <objectNameList>/Image/Map/Korea8.png</objectNameList>
+    <objectNameList>/Image/Map/Korea9.png</objectNameList>
+    <objectNameList>/Image/Background/RunWayA.png</objectNameList>
+    <objectNameList>/Image/Background/RunWayAReverse.png</objectNameList>
+    <objectNameList>/Image/Background/Bridge.png</objectNameList>
+    <objectNameList>/Image/Background/Bridge.png</objectNameList>
+    <objectXList>0</objectXList>
+    <objectXList>3840</objectXList>
+    <objectXList>7680</objectXList>
+    <objectXList>11520</objectXList>
+    <objectXList>15360</objectXList>
+    <objectXList>19200</objectXList>
+    <objectXList>23040</objectXList>
+    <objectXList>26880</objectXList>
+    <objectXList>30720</objectXList>
+    <objectXList>550</objectXList>
+    <objectXList>30050</objectXList>
+    <objectXList>2400</objectXList>
+    <objectXList>28320</objectXList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>248</objectYList>
+    <objectYList>0</objectYList>
+    <objectYList>0</objectYList>
+    <objectYList>0</objectYList>
+    <objectYList>0</objectYList>
+    <mapSize>31000</mapSize>
+  </Map>
+</MapData>

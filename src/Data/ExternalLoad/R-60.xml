@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-60</name>
+    <property>InfraredAAM</property>
+    <mass>43.5</mass>
+    <refArea>0.0113</refArea>
+    <cl>5.53</cl>
+    <duration>500</duration>
+    <subSonicCd0>1.68</subSonicCd0>
+    <superSonicCd0>1.68</superSonicCd0>
+    <maxLoadFactor>30</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>16199</thrustA>
+    <thrustATime>75</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>1</guideTimeInterval>
+    <guideField>12</guideField>
+    <lockRange>8000</lockRange>
+    <lockField>10</lockField>
+    <TNTMass>3</TNTMass>
+    <explosionRange>3</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

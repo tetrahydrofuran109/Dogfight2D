@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EngineData>
+    <Engine>
+        <ABThrust>0.0</ABThrust>
+        <engineType>Jet</engineType>
+        <fuelConsumptionPerThrustAB>0.0</fuelConsumptionPerThrustAB>
+        <fuelConsumptionRatePerThrust>0.0</fuelConsumptionRatePerThrust>
+        <haveWEP>true</haveWEP>
+        <maxThrust>0.0</maxThrust>
+    </Engine>
+</EngineData>

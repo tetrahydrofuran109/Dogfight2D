@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>AIM-4C</name>
+    <property>InfraredAAM</property>
+    <mass>32.6</mass>
+    <refArea>0.0209</refArea>
+    <cl>0.46</cl>
+    <duration>600</duration>
+    <subSonicCd0>1.11</subSonicCd0>
+    <superSonicCd0>1.11</superSonicCd0>
+    <maxLoadFactor>21</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>20738</thrustA>Z
+    <thrustATime>70</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>25</guideField>
+    <lockRange>7625</lockRange>
+    <lockField>10</lockField>
+    <TNTMass>5.1</TNTMass>
+    <explosionRange>0</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

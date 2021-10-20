@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineData>
+  <Engine>
+    <engineType>Jet</engineType>
+    <haveWEP>true</haveWEP>
+    <ABThrust>10750</ABThrust>
+    <ABThrust>11000</ABThrust>
+    <ABThrust>11250</ABThrust>
+    <ABThrust>11530</ABThrust>
+    <ABThrust>12143</ABThrust>
+    <ABThrust>12449</ABThrust>
+    <ABThrust>13061</ABThrust>
+    <ABThrust>14031</ABThrust>
+    <ABThrust>15000</ABThrust>
+    <ABThrust>15816</ABThrust>
+    <ABThrust>16327</ABThrust>
+    <ABThrust>16939</ABThrust>
+    <ABThrust>18000</ABThrust>
+    <ABThrust>20000</ABThrust>
+    <ABThrust>22000</ABThrust>
+    <ABThrust>24000</ABThrust>
+    <ABThrust>26000</ABThrust>
+    <ABThrust>28000</ABThrust>
+    <ABThrust>28000</ABThrust>
+    <engineType>Jet</engineType>
+    <fuelConsumptionPerThrustAB>2.52</fuelConsumptionPerThrustAB>
+    <fuelConsumptionRatePerThrust>0.64</fuelConsumptionRatePerThrust>
+    <maxThrust>7340</maxThrust>
+  </Engine>
+</EngineData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-550-1</name>
+    <property>InfraredAAM</property>
+    <mass>90</mass>
+    <refArea>0.0193</refArea>
+    <cl>6.42</cl>
+    <duration>600</duration>
+    <subSonicCd0>1.97</subSonicCd0>
+    <superSonicCd0>1.97</superSonicCd0>
+    <maxLoadFactor>35</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>23667</thrustA>
+    <thrustATime>100</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>0</guideTimeInterval>
+    <guideField>30</guideField>
+    <lockRange>5000</lockRange>
+    <lockField>35</lockField>
+    <TNTMass>12</TNTMass>
+    <explosionRange>8</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>

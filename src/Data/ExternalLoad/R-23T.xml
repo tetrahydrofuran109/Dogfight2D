@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <name>R-23T</name>
+    <property>InfraredAAM</property>
+    <mass>216</mass>
+    <refArea>0.0314</refArea>
+    <cl>2.76</cl>
+    <duration>1500</duration>
+    <subSonicCd0>1.12</subSonicCd0>
+    <superSonicCd0>1.12</superSonicCd0>
+    <maxLoadFactor>15</maxLoadFactor>
+    <maxAttackField>90</maxAttackField>
+    <thrustA>42336</thrustA>
+    <thrustATime>125</thrustATime>
+    <thrustB>0</thrustB>
+    <thrustBTime>0</thrustBTime>
+    <guideTimeInterval>2</guideTimeInterval>
+    <guideField>55</guideField>
+    <lockRange>9000</lockRange>
+    <lockField>55</lockField>
+    <TNTMass>25</TNTMass>
+    <explosionRange>9</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>
