@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectData>
+  <Aircraft>
+    <a>0.072</a>
+    <a>0.072</a>
+    <AOAmax>15</AOAmax>
+    <basicWeight>5248</basicWeight>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.0175</cd0>
+    <cd0>0.021</cd0>
+    <cd0>0.04</cd0>
+    <designWeight>6068</designWeight>
+    <engineName>J47-GE-27</engineName>
+    <engineNumber>1</engineNumber>
+    <fuelCapacity>1683</fuelCapacity>
+    <gunName>Browning M3</gunName>
+    <gunName>Browning M3</gunName>
+    <gunName>Browning M3</gunName>
+    <gunName>Browning M3</gunName>
+    <gunName>Browning M3</gunName>
+    <gunName>Browning M3</gunName>
+    <gunLocation>0</gunLocation>
+    <gunLocation>4</gunLocation>
+    <gunLocation>8</gunLocation>
+    <gunLocation>12</gunLocation>
+    <gunLocation>-4</gunLocation>
+    <gunLocation>-8</gunLocation>
+    <ammoAmount>300</ammoAmount>
+    <ammoAmount>300</ammoAmount>
+    <ammoAmount>300</ammoAmount>
+    <ammoAmount>300</ammoAmount>
+    <ammoAmount>300</ammoAmount>
+    <ammoAmount>300</ammoAmount>
+    <hasBrake>true</hasBrake>
+    <glimit>7.33</glimit>
+    <KCl>0.07</KCl>
+    <life>125</life>
+    <limitIAS>1150</limitIAS>
+    <limitMach>1.06</limitMach>
+    <Armor>0</Armor>
+    <name>F-86F-25</name>
+    <pitchRate>15000</pitchRate>
+    <pitchRate>16500</pitchRate>
+    <pitchRate>18000</pitchRate>
+    <pitchRate>19500</pitchRate>
+    <pitchRate>21000</pitchRate>
+    <pitchRate>22500</pitchRate>
+    <pitchRate>24000</pitchRate>
+    <pitchRate>25500</pitchRate>
+    <pitchRate>27000</pitchRate>
+    <pitchRate>28500</pitchRate>
+    <pitchRate>30000</pitchRate>
+    <radar>APG-30</radar>
+    <RCS>3.7</RCS>
+    <wingArea>29.12</wingArea>
+  </Aircraft>
+</ObjectData>

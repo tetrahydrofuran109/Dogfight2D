@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadChoiceData>
+  <LoadChoice>
+    <loadName>AIM-4C</loadName>
+    <loadName>AIM-4C</loadName>
+    <loadName>AIM-26B</loadName>
+    <loadName>AIM-26B</loadName>
+    <loadLocationX>-10</loadLocationX>
+    <loadLocationX>-10</loadLocationX>
+    <loadLocationX>10</loadLocationX>
+    <loadLocationX>10</loadLocationX>
+    <loadLocationY>-30</loadLocationY>
+    <loadLocationY>30</loadLocationY>
+    <loadLocationY>-10</loadLocationY>
+    <loadLocationY>0</loadLocationY>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>   
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>   
+  </LoadChoice>
+</LoadChoiceData>

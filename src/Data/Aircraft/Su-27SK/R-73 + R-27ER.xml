@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadChoiceData>
+  <LoadChoice>
+    <loadName>R-27ER</loadName>
+    <loadName>R-27ER</loadName>
+    <loadName>R-27ER</loadName>
+    <loadName>R-27ER</loadName>
+    <loadName>R-27ER</loadName>
+    <loadName>R-27ER</loadName>
+    <loadName>R-73</loadName>
+    <loadName>R-73</loadName>
+    <loadName>R-73</loadName>
+    <loadName>R-73</loadName>
+    <loadLocationX>-10</loadLocationX>
+    <loadLocationX>-80</loadLocationX>
+    <loadLocationX>-10</loadLocationX>
+    <loadLocationX>-10</loadLocationX>
+    <loadLocationX>-35</loadLocationX>
+    <loadLocationX>-25</loadLocationX>
+    <loadLocationX>-70</loadLocationX>
+    <loadLocationX>-50</loadLocationX>
+    <loadLocationX>-75</loadLocationX>
+    <loadLocationX>-60</loadLocationX>
+    <loadLocationY>0</loadLocationY>
+    <loadLocationY>0</loadLocationY>
+    <loadLocationY>-25</loadLocationY>
+    <loadLocationY>20</loadLocationY>
+    <loadLocationY>-38</loadLocationY>
+    <loadLocationY>32</loadLocationY>
+    <loadLocationY>-58</loadLocationY>
+    <loadLocationY>47</loadLocationY>
+    <loadLocationY>-73</loadLocationY>
+    <loadLocationY>62</loadLocationY>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+  </LoadChoice>
+</LoadChoiceData>

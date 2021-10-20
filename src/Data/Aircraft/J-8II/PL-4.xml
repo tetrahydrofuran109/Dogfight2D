@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadChoiceData>
+  <LoadChoice>
+    <loadName>PL-4</loadName>
+    <loadName>PL-4</loadName>
+    <loadLocationX>-25</loadLocationX>
+    <loadLocationX>-25</loadLocationX>
+    <loadLocationY>-25</loadLocationY>
+    <loadLocationY>20</loadLocationY>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>   
+  </LoadChoice>
+</LoadChoiceData>

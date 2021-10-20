@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadChoiceData>
+  <LoadChoice>
+    <loadName>R-550-2</loadName>
+    <loadName>R-530D</loadName>
+    <loadName>R-530D</loadName>
+    <loadName>R-530D</loadName>
+    <loadName>R-530D</loadName>
+    <loadName>R-550-2</loadName>
+    <loadLocationX>-35</loadLocationX>
+    <loadLocationX>-5</loadLocationX>
+    <loadLocationX>-5</loadLocationX>
+    <loadLocationX>-40</loadLocationX>
+    <loadLocationX>-40</loadLocationX>
+    <loadLocationX>-35</loadLocationX>
+    <loadLocationY>-40</loadLocationY>
+    <loadLocationY>-15</loadLocationY>
+    <loadLocationY>10</loadLocationY>
+    <loadLocationY>-15</loadLocationY>
+    <loadLocationY>10</loadLocationY>
+    <loadLocationY>35</loadLocationY>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>   
+    <pylonIndex>1</pylonIndex>
+    <pylonIndex>1</pylonIndex>   
+    <pylonIndex>1</pylonIndex>   
+  </LoadChoice>
+</LoadChoiceData>

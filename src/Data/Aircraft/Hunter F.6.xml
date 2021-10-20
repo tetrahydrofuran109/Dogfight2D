@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectData>
+  <Aircraft>
+    <a>0.08</a>
+    <a>0.08</a>
+    <AOAmax>15</AOAmax>
+    <basicWeight>6406</basicWeight>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.025</cd0>
+    <cd0>0.03</cd0>
+    <cd0>0.04</cd0>
+    <designWeight>7090</designWeight>
+    <engineName>Avon 207</engineName>
+    <engineNumber>1</engineNumber>
+    <fuelCapacity>1367</fuelCapacity>
+    <gunName>ADEN</gunName>
+    <gunName>ADEN</gunName>
+    <gunName>ADEN</gunName>
+    <gunName>ADEN</gunName>
+    <gunLocation>0</gunLocation>
+    <gunLocation>4</gunLocation>
+    <gunLocation>-4</gunLocation>
+    <gunLocation>-8</gunLocation>
+    <ammoAmount>150</ammoAmount>
+    <ammoAmount>150</ammoAmount>
+    <ammoAmount>150</ammoAmount>
+    <ammoAmount>150</ammoAmount>
+    <hasBrake>true</hasBrake>
+    <glimit>7</glimit>
+    <KCl>0.053</KCl>
+    <life>125</life>
+    <limitIAS>1150</limitIAS>
+    <limitMach>1.1</limitMach>
+    <Armor>0</Armor>
+    <name>Hunter F.6</name>
+    <pitchRate>15000</pitchRate>
+    <pitchRate>16500</pitchRate>
+    <pitchRate>18000</pitchRate>
+    <pitchRate>19500</pitchRate>
+    <pitchRate>21000</pitchRate>
+    <pitchRate>22500</pitchRate>
+    <pitchRate>24000</pitchRate>
+    <pitchRate>23500</pitchRate>
+    <pitchRate>23000</pitchRate>
+    <pitchRate>22500</pitchRate>
+    <pitchRate>22000</pitchRate>
+    <radar>ARI 5820</radar>
+    <RCS>4</RCS>
+    <wingArea>32.4</wingArea>
+  </Aircraft>
+</ObjectData>
