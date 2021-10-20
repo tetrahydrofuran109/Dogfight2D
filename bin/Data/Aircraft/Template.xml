@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectData>
+  <Aircraft>
+    <a>0</a>
+    <a>0</a>
+    <AOAmax>0</AOAmax>
+    <basicWeight>0</basicWeight>
+    <cd0>0</cd0>
+    <cd0>0</cd0>
+    <designWeight>0</designWeight>
+    <engineName>template</engineName>
+    <engineNumber>0</engineNumber>
+    <fuelCapacity>0</fuelCapacity>
+    <glimit>0</glimit>
+    <KCl>0</KCl>
+    <name>Template</name>
+    <pitchRate>0</pitchRate>
+    <pitchRate>0</pitchRate>
+    <wingArea>0</wingArea>
+  </Aircraft>
+</ObjectData>

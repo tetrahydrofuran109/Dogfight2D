@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadChoiceData>
+  <LoadChoice>
+    <loadName>AIM-7E-2</loadName>
+    <loadName>AIM-7E-2</loadName>
+    <loadName>AIM-7E-2</loadName>
+    <loadName>AIM-7E-2</loadName>
+    <loadName>AIM-9D</loadName>
+    <loadName>AIM-9D</loadName>
+    <loadName>AIM-9D</loadName>
+    <loadName>AIM-9D</loadName>
+    <loadLocationX>30</loadLocationX>
+    <loadLocationX>30</loadLocationX>
+    <loadLocationX>-30</loadLocationX>
+    <loadLocationX>-30</loadLocationX>
+    <loadLocationX>10</loadLocationX>
+    <loadLocationX>10</loadLocationX>
+    <loadLocationX>0</loadLocationX>
+    <loadLocationX>0</loadLocationX>
+    <loadLocationY>-10</loadLocationY>
+    <loadLocationY>5</loadLocationY>
+    <loadLocationY>-10</loadLocationY>
+    <loadLocationY>5</loadLocationY>
+    <loadLocationY>-20</loadLocationY>
+    <loadLocationY>20</loadLocationY>
+    <loadLocationY>-25</loadLocationY>
+    <loadLocationY>25</loadLocationY>
+    <pylonIndex>0.5</pylonIndex>
+    <pylonIndex>0.5</pylonIndex>
+    <pylonIndex>0.5</pylonIndex>
+    <pylonIndex>0.5</pylonIndex>
+    <pylonIndex>0.75</pylonIndex>
+    <pylonIndex>0.75</pylonIndex>
+    <pylonIndex>0.75</pylonIndex>
+    <pylonIndex>0.75</pylonIndex>   
+  </LoadChoice>
+</LoadChoiceData>
