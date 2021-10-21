@@ -335,6 +335,10 @@ public class ExternalLoad extends Object {
 	
 	public void move()
 	{
+		if(this.Owner.getY()<1&&this.Owner.getLife()==0)
+		{
+			this.isEffective = false;
+		}
 		if(this.isEffective == true&&this.isLauched == false)
 		{
 			this.Velocity = this.Owner.getVelocity();
