@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
+    <antiJam>20</antiJam>
     <name>R-73</name>
     <property>InfraredAAM</property>
     <mass>105</mass>
     <refArea>0.0227</refArea>
     <cl>25.6</cl>
     <duration>600</duration>
-    <subSonicCd0>1.5</subSonicCd0>
-    <superSonicCd0>1.5</superSonicCd0>
+    <subSonicCd0>1.68</subSonicCd0>
+    <superSonicCd0>1.68</superSonicCd0>
     <maxLoadFactor>40</maxLoadFactor>
     <maxAttackField>180</maxAttackField>
     <thrustA>25154</thrustA>

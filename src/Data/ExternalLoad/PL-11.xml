@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
+    <antiJam>40</antiJam>
     <name>PL-11</name>
     <property>SemiRadarAAM</property>
     <mass>220</mass>

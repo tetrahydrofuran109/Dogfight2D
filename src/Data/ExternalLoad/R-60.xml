@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
+    <antiJam>10</antiJam>
     <name>R-60</name>
     <property>InfraredAAM</property>
     <mass>43.5</mass>

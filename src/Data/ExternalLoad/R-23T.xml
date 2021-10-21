@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
+    <antiJam>10</antiJam>
     <name>R-23T</name>
     <property>InfraredAAM</property>
     <mass>216</mass>
