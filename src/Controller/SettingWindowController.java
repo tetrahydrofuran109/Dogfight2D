@@ -79,6 +79,12 @@ public class SettingWindowController implements Initializable   {
 	private Button CMDD;
 	
 	@FXML
+	private Button Chaff;
+	
+	@FXML
+	private Button Flare;
+	
+	@FXML
 	private Button Cancel;
 	
 	@FXML
@@ -150,6 +156,8 @@ public class SettingWindowController implements Initializable   {
 	        AIMR.setText(Setting.getHelmetAimingCodeDown());
 	        CMDU.setText(Setting.getCommandCodeUP());
 	        CMDD.setText(Setting.getCommandCodeDown());
+	        Chaff.setText(Setting.getChaffCode());
+	        Flare.setText(Setting.getFlareCode());
 	        
 	        EffectAudio.setSelected(Setting.isHaveEffectAudio());;
 	        EngineAudio.setSelected(Setting.isHaveEngineAudio());
@@ -390,6 +398,36 @@ public class SettingWindowController implements Initializable   {
 	   }
 	   
 	  /**
+	   * Press a key to set the keyCode
+	   * @param event event in type ActionEvent
+	   */
+	   public void Chaff(ActionEvent event) {
+		   Key.setVisible(true);
+		   Chaff.setOnKeyPressed(new EventHandler<KeyEvent>(){
+				 public void handle(KeyEvent e)
+				{
+				   Chaff.setText(e.getCode().toString());
+                   Key.setVisible(false);
+				}
+	        });
+	   }
+
+	  /**
+	   * Press a key to set the keyCode
+	   * @param event event in type ActionEvent
+	   */
+	   public void Flare(ActionEvent event) {
+		   Key.setVisible(true);
+		   Flare.setOnKeyPressed(new EventHandler<KeyEvent>(){
+	   		     public void handle(KeyEvent e)
+				{
+	   		       Flare.setText(e.getCode().toString());
+	               Key.setVisible(false);
+				}
+	        });
+	   }	   
+	   
+	  /**
 	   * Cancel the setting
 	   * @param event event in type ActionEvent
 	   */
@@ -426,6 +464,8 @@ public class SettingWindowController implements Initializable   {
        	        Setting.setHelmetAimingCodeDown(AIMR.getText());
        	        Setting.setCommandCodeUP(CMDU.getText());
        	        Setting.setCommandCodeDown(CMDD.getText());
+       	        Setting.setChaffCode(Chaff.getText());
+       	        Setting.setFlareCode(Flare.getText());
        	        
        	        Setting.setHaveEffectAudio(EffectAudio.isSelected());
        	        Setting.setHaveEngineAudio(EngineAudio.isSelected());

@@ -64,6 +64,12 @@ public class GameWindowController implements Initializable {
 	@FXML
 	private Text ammo;
 	
+	@FXML
+	private Text chaff;
+	
+	@FXML
+	private Text flare;
+	
 	/**
 	 * Buttons for pause and continue, up is used for test and debug(the button with "R" in game)
 	 */
@@ -275,6 +281,14 @@ public class GameWindowController implements Initializable {
 			for(int i = 0;i<Aircrafts.get(j).getBulletList().size();i++)
 			{
 				Weapon.getChildren().add(Aircrafts.get(j).getBulletList().get(i).getView());
+			}
+			for(int i = 0;i<Aircrafts.get(j).getFlareList().size();i++)
+			{
+				Weapon.getChildren().add(Aircrafts.get(j).getFlareList().get(i).getView());
+			}
+			for(int i = 0;i<Aircrafts.get(j).getChaffList().size();i++)
+			{
+				Weapon.getChildren().add(Aircrafts.get(j).getChaffList().get(i).getView());
 			}
 			for(int i = 0;i<Aircrafts.get(j).getExternalLoadList().size();i++)
 			{
@@ -523,19 +537,44 @@ public class GameWindowController implements Initializable {
 									}
 								}
 								
+								for(int i = 0;i<Aircrafts.get(j).getFlareList().size();i++)
+								{
+									if(Aircrafts.get(j).getFlareList().get(i).isEffective() == true)
+									{
+										Aircrafts.get(j).getFlareList().get(i).move();
+										Aircrafts.get(j).getFlareList().get(i).setView(CameraX, CameraY);
+									}
+								}
+								
+								for(int i = 0;i<Aircrafts.get(j).getChaffList().size();i++)
+								{
+									if(Aircrafts.get(j).getChaffList().get(i).isEffective() == true)
+									{
+										Aircrafts.get(j).getChaffList().get(i).move();
+										Aircrafts.get(j).getChaffList().get(i).setView(CameraX, CameraY);
+									}
+								}
+								
 								for(int i = 0;i<Aircrafts.get(j).getExternalLoadList().size();i++)
 								{
 									if(Aircrafts.get(j).getExternalLoadList().get(i).isEffective() == true)
 									{
 										Aircrafts.get(j).getExternalLoadList().get(i).move();
-										if(Aircrafts.get(0).getMyPlayer().isRadarMode()==true)
+										for(int k=0; k<Aircrafts.size(); k++)
 										{
-											if(j!=0&&Aircrafts.get(0).getMyPlayer().getRadarModel().RadarWarning(Aircrafts.get(j).getExternalLoadList().get(i),Aircrafts.get(j).getMyPlayer().getRadarModel())==true)
+											if(Aircrafts.get(k).getMyPlayer().isRadarMode()==true)
 											{
-												Tips.setText("Radar homing missile lauched!");
-												PlayWarningAudio();
-												Tips.autosize();
-												Counter = 150;
+												if(j!=k)
+												{
+													Aircrafts.get(k).getMyPlayer().getRadarModel().setRadarWarning(Aircrafts.get(k).getMyPlayer().getRadarModel().RadarWarning(Aircrafts.get(j).getExternalLoadList().get(i),Aircrafts.get(j).getMyPlayer().getRadarModel()));
+													if(Aircrafts.get(0).getMyPlayer().getRadarModel().isRadarWarning())
+													{
+														Tips.setText("Radar homing missile lauched!");
+														PlayWarningAudio();
+														Tips.autosize();
+														Counter = 150;
+													}
+												}
 											}
 										}
 									}
@@ -565,6 +604,8 @@ public class GameWindowController implements Initializable {
 							mach.setText(Aircrafts.get(0).getIndicateMach());
 							fuel.setText(Aircrafts.get(0).getIndicateFuel());
 							ammo.setText(Aircrafts.get(0).getIndicateAmmo());
+							chaff.setText(Aircrafts.get(0).getIndicateChaff());
+							flare.setText(Aircrafts.get(0).getIndicateFlare());
 							if(Aircrafts.get(0).getMyPlayer().getCurrentWeapon()!=null)
 							{
 								WeaponIndicator.setText(Aircrafts.get(0).getMyPlayer().getCurrentWeapon().getPerformance().getName()+" ¡Á "+Integer.toString(Aircrafts.get(0).getMyPlayer().getTotalCurrentWeapon()));

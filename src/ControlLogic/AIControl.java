@@ -151,8 +151,24 @@ public class AIControl extends ControlLogic {
 	*/
 	public void Act()
 	{
+		if(this.getRadarModel().isRadarWarning()&&this.getMyAircraft().getAntiRadarValue()<150)
+		{
+			this.LaunchChaff();
+		}
 		if(this.TargetAircraft!=null)
 		{
+			if(TacticsLogic.checkWarningByView(this.getMyAircraft(), this.TargetAircraft))
+			{
+				if(this.getMyAircraft().getAntiInfraredValue()<150)
+				{
+					this.LaunchFlares();
+				}
+				if(this.getMyAircraft().getAntiRadarValue()<150)
+				{
+					this.LaunchChaff();
+				}
+			}
+			
 			if(!TacticsLogic.AvoidCrash(this.getMyAircraft()))
 			{
 			   /**

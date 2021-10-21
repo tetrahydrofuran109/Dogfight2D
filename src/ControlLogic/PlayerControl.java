@@ -274,6 +274,12 @@ public class PlayerControl extends ControlLogic {
 	    else if(Code.equals(this.Setting.getCommandCodeDown())){
 	    	this.setCommandOrder(-1);
         }
+	    else if(Code.equals(this.Setting.getChaffCode())){
+	    	this.LaunchChaff();
+	    }
+	    else if(Code.equals(this.Setting.getFlareCode())){
+	    	this.LaunchFlares();
+        }
 		if(isControl == true)
 		{
 			this.Trim();

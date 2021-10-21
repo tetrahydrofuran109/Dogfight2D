@@ -212,4 +212,25 @@ public class TacticsLogic {
 			aircraft.getMyPlayer().HeadTurning(false);
 		}
 	}
+	
+	/**
+	 * to detect and warn the missle lauched from enemy by AI
+	 * @param AIObserver the AI excute this method
+	 * @param object the enemy
+	 * @return true if is in range and owner is caputured
+	 */
+	
+	@SuppressWarnings("unused")
+	public static boolean checkWarningByView(Object AIObserver, Object object)
+	{
+		for(int i = 0;i<object.getExternalLoadList().size();i++)
+		{
+			if(Locating.getDistance(AIObserver,object.getExternalLoadList().get(i))<960&&object.getExternalLoadList().get(i).isLauched()==true&&object.getExternalLoadList().get(i).isEffective()==true)
+			{
+				return true;
+			}
+			else return false;
+		}
+		return false;
+	}
 }

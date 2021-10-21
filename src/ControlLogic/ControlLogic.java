@@ -4,6 +4,7 @@ import java.io.File;
 
 import Controller.SettingWindowController;
 import Object.Aircraft;
+import Object.CounterMeasures;
 import Object.ExternalLoad;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -45,6 +46,8 @@ public class ControlLogic {
 	protected double HelmetDirection = 0;
 	
 	protected int CommandOrder = 0;
+	
+	protected int counterMeasureInterval = 0;
 	
 	public int getCommandOrder() {
 		return CommandOrder;
@@ -336,6 +339,56 @@ public class ControlLogic {
 				}
 			}
 		}
+	}
+	
+	/**
+	 * This method is to implement the launch of flares
+	 */
+	
+	public void LaunchFlares()
+	{
+		if(this.counterMeasureInterval == 0)
+		{
+			for(int i=0;i<this.getMyAircraft().getFlareList().size();i++)
+			{
+				if(this.getMyAircraft().getFlareList().get(i).isEffective()==false&&this.getMyAircraft().getFlareList().get(i).getDuration()==150)
+				{
+					this.getMyAircraft().getFlareList().get(i).Enable(this.getMyAircraft());
+					if(this.getMyAircraft().getAntiInfraredValue()<150)
+					{
+						this.getMyAircraft().setAntiInfraredValue(this.getMyAircraft().getAntiInfraredValue()+CounterMeasures.flarePower);
+					}
+					this.counterMeasureInterval = 2;
+					break;
+				}
+			}
+		}
+		else this.counterMeasureInterval--;
+	}
+	
+	/**
+	 * This method is to implement the launch of chaff
+	 */
+	
+	public void LaunchChaff()
+	{
+		if(this.counterMeasureInterval == 0)
+		{
+			for(int i=0;i<this.getMyAircraft().getChaffList().size();i++)
+			{
+				if(this.getMyAircraft().getChaffList().get(i).isEffective()==false&&this.getMyAircraft().getChaffList().get(i).getDuration()==150)
+				{
+					this.getMyAircraft().getChaffList().get(i).Enable(this.getMyAircraft());
+					if(this.getMyAircraft().getAntiRadarValue()<150)
+					{
+						this.getMyAircraft().setAntiRadarValue(this.getMyAircraft().getAntiRadarValue()+CounterMeasures.ChaffPower);
+					}
+					this.counterMeasureInterval = 2;
+					break;
+				}
+			}
+		}
+		else this.counterMeasureInterval--;
 	}
 	
 	/**
