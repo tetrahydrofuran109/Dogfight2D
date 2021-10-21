@@ -55,6 +55,7 @@ public class ExternalLoad extends Object {
 	
 	private int GuideCondition;
 	private boolean isEffective;
+	private boolean isIrreversibleJam;
 	
 	private Aircraft Owner;
 	private Object CapturedObject;
@@ -102,6 +103,14 @@ public class ExternalLoad extends Object {
 	
 	public ExternalLoadPerformance getPerformance() {
 		return Performance;
+	}
+	
+	public boolean isIrreversibleJam() {
+		return isIrreversibleJam;
+	}
+
+	public void setIrreversibleJam(boolean isIrreversibleJam) {
+		this.isIrreversibleJam = isIrreversibleJam;
 	}
 
 	/**
@@ -291,6 +300,7 @@ public class ExternalLoad extends Object {
 		this.Velocity = this.Owner.getVelocity();
 		this.Duration = this.getPerformance().getDuration();
 		this.Signature = this.Owner.getSignature();
+		this.isIrreversibleJam = false;
 	}
 	
 	/**
@@ -378,52 +388,56 @@ public class ExternalLoad extends Object {
 	
 	private void Guide() {
 		// TODO Auto-generated method stub
-		if(this.LockInterval==this.Performance.getGuideTimeInterval()&&this.CapturedObject!=null)
+		if(this.isIrreversibleJam==false)
 		{
-			if(Locating.isInsideField(Locating.getRelativeAngle(this,CapturedObject), this.getVelocity().getDirection(), this.Performance.getGuideField())
-			|| (this.getOwner().getHelmet()!=null&&this.getOwner().getHelmet().getAllowedWeapon().contains(this.getOwner().getMyPlayer().getCurrentWeapon().getPerformance().getName())))
+			if(this.LockInterval==this.Performance.getGuideTimeInterval()&&this.CapturedObject!=null)
 			{
-				this.GuideCondition = Locating.Guiding(this, CapturedObject);
+				if(Locating.isInsideField(Locating.getRelativeAngle(this,CapturedObject), this.getVelocity().getDirection(), this.Performance.getGuideField())
+				|| (this.getOwner().getHelmet()!=null&&this.getOwner().getHelmet().getAllowedWeapon().contains(this.getOwner().getMyPlayer().getCurrentWeapon().getPerformance().getName())))
+				{
+					this.GuideCondition = Locating.Guiding(this, CapturedObject);
+				}
+				else this.GuideCondition = 0;
 			}
 			else this.GuideCondition = 0;
+			this.LockInterval++;
+			if(this.LockInterval>this.Performance.getGuideTimeInterval())
+			{
+				this.LockInterval = 0;
+			}
+			
+			if(this.Performance.getProperty().contains("Command")&&this.getOwner().getMyPlayer().getCommandOrder()!=0)
+			{
+				this.GuideCondition = this.getOwner().getMyPlayer().getCommandOrder();
+				this.getOwner().getMyPlayer().setCommandOrder(0);
+			}
+			
+			if(this.CapturedObject!=null)
+			{
+				if(this.Performance.getProperty().contains("Radar")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
+				{
+					this.GuideCondition = 0;
+					if(3*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
+					{
+						this.isIrreversibleJam = true;
+					}
+				}
+				if(this.Performance.getProperty().contains("Infrared")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
+				{
+					this.GuideCondition = 0;
+					if(3*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
+					{
+						this.isIrreversibleJam = true;
+					}
+				}
+			}
+			
+			if(this.Performance.getProperty().contains("SemiRadarAAM"))
+			{
+				this.CapturedObject = null;
+			}
 		}
 		else this.GuideCondition = 0;
-		this.LockInterval++;
-		if(this.LockInterval>this.Performance.getGuideTimeInterval())
-		{
-			this.LockInterval = 0;
-		}
-		
-		if(this.Performance.getProperty().contains("Command")&&this.getOwner().getMyPlayer().getCommandOrder()!=0)
-		{
-			this.GuideCondition = this.getOwner().getMyPlayer().getCommandOrder();
-			this.getOwner().getMyPlayer().setCommandOrder(0);
-		}
-		
-		if(this.CapturedObject!=null)
-		{
-			if(this.Performance.getProperty().contains("Radar")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
-			{
-				this.GuideCondition = 0;
-				if(2*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
-				{
-					this.CapturedObject = null;
-				}
-			}
-			if(this.Performance.getProperty().contains("Infrared")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
-			{
-				this.GuideCondition = 0;
-				if(2*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
-				{
-					this.CapturedObject = null;
-				}
-			}
-		}
-		
-		if(this.Performance.getProperty().contains("SemiRadarAAM"))
-		{
-			this.CapturedObject = null;
-		}
 	}
 	
 	/**

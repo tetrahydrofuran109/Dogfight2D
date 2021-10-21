@@ -22,8 +22,8 @@ public class CounterMeasures extends Object {
 	private boolean isEffective;
 	private int Duration;
 	
-	public final static int flarePower = 10;
-	public final static int ChaffPower = 10;
+	public final static int flarePower = 20;
+	public final static int ChaffPower = 20;
 	public final static double LaunchSpeed = 500;
 	
 	/**
