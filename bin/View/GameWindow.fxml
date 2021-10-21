@@ -69,7 +69,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Text fx:id="fuel" layoutX="95.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="183.17578125">
+      <Text fx:id="fuel" layoutX="97.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="183.17578125">
          <font>
             <Font size="24.0" />
          </font>
@@ -125,5 +125,25 @@
          </font>
       </Text>
       <ImageView fx:id="WeaponUI" fitHeight="40.0" fitWidth="160.0" layoutX="1673.0" layoutY="845.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="26.0" layoutY="260.0" text="Flare:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="290.0" text="Chaff:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="flare" layoutX="100.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="183.17578125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="chaff" layoutX="100.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="183.17578125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
