@@ -27,6 +27,8 @@ public class ControlSettings {
 	private String HelmetAimingCodeDown;
 	private String CommandCodeUP;
 	private String CommandCodeDown;
+	private String ChaffCode;
+	private String FlareCode;
 	
 	private boolean haveEngineAudio;
 	private boolean haveGunAudio;
@@ -189,5 +191,17 @@ public class ControlSettings {
 	}
 	public void setCommandCodeDown(String commandCodeDown) {
 		CommandCodeDown = commandCodeDown;
+	}
+	public String getChaffCode() {
+		return ChaffCode;
+	}
+	public void setChaffCode(String chaffCode) {
+		ChaffCode = chaffCode;
+	}
+	public String getFlareCode() {
+		return FlareCode;
+	}
+	public void setFlareCode(String flareCode) {
+		FlareCode = flareCode;
 	}	
 }

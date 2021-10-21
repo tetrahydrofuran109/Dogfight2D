@@ -36,8 +36,6 @@ public class GunBullet extends Object {
 	
 	private Gun gun;
 	
-	private ImageView View;
-	
 	/**Getters and Setters**/
 	
 	public int getSignature() {
@@ -46,14 +44,6 @@ public class GunBullet extends Object {
 
 	public void setSignature(int signature) {
 		Signature = signature;
-	}
-
-	public ImageView getView() {
-		return this.View;
-	}
-
-	public void setView(ImageView view) {
-		View = view;
 	}
 
 	public boolean isEffective() {

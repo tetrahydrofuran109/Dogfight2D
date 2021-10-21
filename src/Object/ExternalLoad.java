@@ -44,8 +44,6 @@ public class ExternalLoad extends Object {
 	
 	private ExternalLoadPerformance Performance;
 	
-	private ImageView View;
-	
 	private Vector Gravity;
 	private Vector Drag;
 	private Vector Lift;
@@ -84,10 +82,6 @@ public class ExternalLoad extends Object {
 
 	public void setCapturedObject(Object capturedObject) {
 		this.CapturedObject = capturedObject;
-	}
-
-	public ImageView getView() {
-		return View;
 	}
 
 	public boolean isLauched() {
@@ -331,10 +325,6 @@ public class ExternalLoad extends Object {
 	
 	public void move()
 	{
-		if(this.Owner.getLife() == 0)
-		{
-			this.setEffective(false);
-		}
 		if(this.isEffective == true&&this.isLauched == false)
 		{
 			this.Velocity = this.Owner.getVelocity();
@@ -404,15 +394,35 @@ public class ExternalLoad extends Object {
 			this.LockInterval = 0;
 		}
 		
-		if(this.Performance.getProperty().contains("SemiRadarAAM"))
-		{
-			this.CapturedObject = null;
-		}
-		
 		if(this.Performance.getProperty().contains("Command")&&this.getOwner().getMyPlayer().getCommandOrder()!=0)
 		{
 			this.GuideCondition = this.getOwner().getMyPlayer().getCommandOrder();
 			this.getOwner().getMyPlayer().setCommandOrder(0);
+		}
+		
+		if(this.CapturedObject!=null)
+		{
+			if(this.Performance.getProperty().contains("Radar")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
+			{
+				this.GuideCondition = 0;
+				if(2*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiRadarValue())
+				{
+					this.CapturedObject = null;
+				}
+			}
+			if(this.Performance.getProperty().contains("Infrared")&&this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
+			{
+				this.GuideCondition = 0;
+				if(2*this.getPerformance().getAntiJam()<this.CapturedObject.getAntiInfraredValue())
+				{
+					this.CapturedObject = null;
+				}
+			}
+		}
+		
+		if(this.Performance.getProperty().contains("SemiRadarAAM"))
+		{
+			this.CapturedObject = null;
 		}
 	}
 	

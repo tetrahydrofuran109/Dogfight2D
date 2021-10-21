@@ -38,6 +38,8 @@ public class ExternalLoadPerformance {
 	private double LockField;
 	private double MaxAttackField;
 	
+	private int AntiJam;
+	
 	private double TNTMass;
 	private double ExplosionRange;
 	
@@ -163,5 +165,11 @@ public class ExternalLoadPerformance {
 	}
 	public void setLockField(double lockField) {
 		LockField = lockField;
+	}
+	public int getAntiJam() {
+		return AntiJam;
+	}
+	public void setAntiJam(int antiJam) {
+		AntiJam = antiJam;
 	}
 }

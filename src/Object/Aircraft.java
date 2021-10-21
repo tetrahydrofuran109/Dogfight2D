@@ -69,10 +69,6 @@ public class Aircraft extends Object {
 	private Engine Engine;
 	private int EngineNumber;
 	
-	private ArrayList<Gun> guns;
-	private ArrayList<GunBullet> BulletList;
-	private ArrayList<Double> PylonIndexList;
-	
 	private Radar Radar;
 	private Helmet Helmet;
 	
@@ -89,20 +85,8 @@ public class Aircraft extends Object {
 		return this.Performance;
 	}
 
-	public ArrayList<GunBullet> getBulletList() {
-		return this.BulletList;
-	}
-
 	public Radar getRadar() {
 		return Radar;
-	}
-	
-	public ArrayList<Double> getPylonIndexList() {
-		return PylonIndexList;
-	}
-	
-	public ArrayList<Gun> getGuns() {
-		return this.guns;
 	}
 	
 	public int getEngineNumber() {
@@ -207,33 +191,6 @@ public class Aircraft extends Object {
 		ColorAdjust ShowLife = new ColorAdjust();
 		ShowLife.setBrightness((this.Life-this.Performance.getLife())/this.Performance.getLife());
 		this.View.setEffect(ShowLife);
-	}
-
-	/**
-	 * Reload the bullet to the gun
-	 * the signature will be passed to bullets
-	 */
-	
-	public void Reload() {
-		for(int i = 0;i<this.guns.size();i++)
-		{
-			this.guns.get(i).Reload(this.BulletList, this.Signature);
-		}
-	}
-
-	/**
-	 * Count the total amount of ammo of this aircraft
-	 * @return totalAmmo 
-	 */
-	
-	public int getTotalAmmo()
-	{
-		int totalAmmo = 0;
-		for(int i = 0;i<this.guns.size();i++)
-		{
-			totalAmmo = totalAmmo + this.guns.get(i).getAmmoCount();
-		}
-		return totalAmmo;
 	}
 	
 	/**
@@ -505,6 +462,8 @@ public class Aircraft extends Object {
 		this.BulletList = new ArrayList<GunBullet>();
 		this.ExternalLoadList = new ArrayList<ExternalLoad>();
 		this.PylonIndexList = new ArrayList<Double>();
+		this.flareList = new ArrayList<CounterMeasures>();
+		this.chaffList = new ArrayList<CounterMeasures>();
 		this.Radar = null;
         try {
 			JAXBContext context = JAXBContext
@@ -518,6 +477,14 @@ public class Aircraft extends Object {
 			this.View = new ImageView(img);
 			this.View.setVisible(false);
 			this.setRCS(data.getData().getRCS());
+			for(int i = 0;i<data.getData().getFlareAmount();i++)
+			{
+				this.flareList.add(new CounterMeasures("Flare"));
+			}
+			for(int i = 0;i<data.getData().getChaffAmount();i++)
+			{
+				this.chaffList.add(new CounterMeasures("Chaff"));
+			}
 	        try {
 				JAXBContext context1 = JAXBContext
 				        .newInstance(EngineData.class);
@@ -706,5 +673,15 @@ public class Aircraft extends Object {
 	public String getIndicateAmmo()
 	{
 		return Integer.toString(this.getTotalAmmo());
+	}
+	
+	public String getIndicateFlare()
+	{
+		return Integer.toString(this.getTotalFlare());
+	}
+	
+	public String getIndicateChaff()
+	{
+		return Integer.toString(this.getTotalChaff());
 	}
 }

@@ -1,6 +1,7 @@
 package Object;
 
 import Physics.Vector;
+import Property.Gun;
 import javafx.scene.image.ImageView;
 
 import java.util.ArrayList;
@@ -42,7 +43,15 @@ public class Object {
 	protected float Armor;
 	protected int Signature;
 	
+	protected ArrayList<Gun> guns;
+	protected ArrayList<GunBullet> BulletList;
 	protected ArrayList<ExternalLoad> ExternalLoadList;
+	protected ArrayList<Double> PylonIndexList;
+	protected ArrayList<CounterMeasures> flareList;
+	protected ArrayList<CounterMeasures> chaffList;
+	
+	protected int AntiRadarValue = 0;
+	protected int AntiInfraredValue = 0;
 	
 	protected ImageView View;
 	
@@ -124,6 +133,22 @@ public class Object {
 		Armor = armor;
 	}
 	
+	public int getAntiRadarValue() {
+		return AntiRadarValue;
+	}
+
+	public void setAntiRadarValue(int antiRadarValue) {
+		AntiRadarValue = antiRadarValue;
+	}
+
+	public int getAntiInfraredValue() {
+		return AntiInfraredValue;
+	}
+
+	public void setAntiInfraredValue(int antiInfraredValue) {
+		AntiInfraredValue = antiInfraredValue;
+	}
+
 	public ArrayList<ExternalLoad> getExternalLoadList() {
 		return ExternalLoadList;
 	}
@@ -132,6 +157,34 @@ public class Object {
 		ExternalLoadList = externalLoadList;
 	}
 	
+	public ArrayList<Gun> getGuns() {
+		return this.guns;
+	}
+	
+	public ArrayList<GunBullet> getBulletList() {
+		return this.BulletList;
+	}
+	
+	public ArrayList<Double> getPylonIndexList() {
+		return PylonIndexList;
+	}
+	
+	public ArrayList<CounterMeasures> getFlareList() {
+		return flareList;
+	}
+
+	public void setFlareList(ArrayList<CounterMeasures> flareList) {
+		this.flareList = flareList;
+	}
+
+	public ArrayList<CounterMeasures> getChaffList() {
+		return chaffList;
+	}
+
+	public void setChaffList(ArrayList<CounterMeasures> chaffList) {
+		this.chaffList = chaffList;
+	}
+
 	/**
 	 * Add all the force vector, it should be override by subclasses
 	 */
@@ -173,6 +226,76 @@ public class Object {
 		this.Velocity = this.Velocity.vectorAdd(this.getAcceleration().vectorTime(Earth.TimeInterval/1000));
 		this.x = this.x + this.Velocity.getValueX()*Earth.TimeInterval/1000;
 		this.y = this.y + this.Velocity.getValueY()*Earth.TimeInterval/1000;
+		if(this.AntiRadarValue > 0)
+		{
+			this.AntiRadarValue--;
+		}
+		if(this.AntiInfraredValue > 0)
+		{
+			this.AntiInfraredValue--;
+		}
+	}
+	/**
+	 * Reload the bullet to the gun
+	 * the signature will be passed to bullets
+	 */
+	
+	public void Reload() {
+		for(int i = 0;i<this.guns.size();i++)
+		{
+			this.guns.get(i).Reload(this.BulletList, this.Signature);
+		}
+	}
+
+	/**
+	 * Count the total amount of ammo of this aircraft
+	 * @return totalAmmo 
+	 */
+	
+	public int getTotalAmmo()
+	{
+		int totalAmmo = 0;
+		for(int i = 0;i<this.guns.size();i++)
+		{
+			totalAmmo = totalAmmo + this.guns.get(i).getAmmoCount();
+		}
+		return totalAmmo;
+	}
+	
+	/**
+	 * Count the total amount of flare of this object
+	 * @return totalFlare 
+	 */
+	
+	public int getTotalFlare()
+	{
+		int totalFlare = 0;
+		for(int i = 0;i<this.flareList.size();i++)
+		{
+			if(this.flareList.get(i).isEffective()==false&&this.flareList.get(i).getDuration()==150)
+			{
+				totalFlare++;
+			}
+		}
+		return totalFlare;
+	}
+	
+	/**
+	 * Count the total amount of chaff of this object
+	 * @return totalChaff 
+	 */
+	
+	public int getTotalChaff()
+	{
+		int totalChaff = 0;
+		for(int i = 0;i<this.chaffList.size();i++)
+		{
+			if(this.chaffList.get(i).isEffective()==false&&this.chaffList.get(i).getDuration()==150)
+			{
+				totalChaff++;
+			}
+		}
+		return totalChaff;
 	}
 	
 	/**

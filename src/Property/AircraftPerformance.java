@@ -40,6 +40,9 @@ public class AircraftPerformance {
 	private ArrayList<String> gunName = new ArrayList<String>();
 	private ArrayList<Double> gunLocation = new ArrayList<Double>();
 	private ArrayList<Integer> ammoAmount = new ArrayList<Integer>();
+	
+	private int flareAmount;
+	private int chaffAmount;
 
 	private String Radar;
 	private String Helmet;
@@ -250,6 +253,22 @@ public class AircraftPerformance {
 		EngineName = engineName;
 	}
 	
+	public int getFlareAmount() {
+		return flareAmount;
+	}
+
+	public void setFlareAmount(int flareAmount) {
+		this.flareAmount = flareAmount;
+	}
+
+	public int getChaffAmount() {
+		return chaffAmount;
+	}
+
+	public void setChaffAmount(int chaffAmount) {
+		this.chaffAmount = chaffAmount;
+	}
+
 	/**
 	 * get max load factor of current mass
 	 * the max load factor is determind by mass of aircraft

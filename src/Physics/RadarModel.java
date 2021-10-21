@@ -23,6 +23,8 @@ public class RadarModel {
 	private int RadarScanPointer;
 	private ArrayList<Object> radarTargetList;
 	
+	private boolean isRadarWarning;
+	
 	/**
 	 * Constructor
 	 * @param owner owner of this Radar model
@@ -45,6 +47,14 @@ public class RadarModel {
 		RadarScanPointer++;
 	}
 	
+	public boolean isRadarWarning() {
+		return isRadarWarning;
+	}
+
+	public void setRadarWarning(boolean isRadarWarning) {
+		this.isRadarWarning = isRadarWarning;
+	}
+
 	/**
 	 * Calculate the actual detect range of a radar detecter
 	 * the detect range is Proportional to the 1/4th power of RCS
