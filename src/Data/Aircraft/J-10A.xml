@@ -49,6 +49,8 @@
     <engineName>AL-31F</engineName>
     <engineNumber>1</engineNumber>
     <fuelCapacity>3000</fuelCapacity>
+    <flareAmount>30</flareAmount>
+    <chaffAmount>60</chaffAmount>
     <gunName>Gsh-23</gunName>
     <gunLocation>0</gunLocation>
     <ammoAmount>150</ammoAmount>

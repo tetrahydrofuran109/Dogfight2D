@@ -49,6 +49,8 @@
     <engineName>F100-PW-100</engineName>
     <engineNumber>2</engineNumber>
     <fuelCapacity>6116</fuelCapacity>
+    <flareAmount>120</flareAmount>
+    <chaffAmount>60</chaffAmount>
     <gunName>M-61</gunName>
     <gunLocation>0</gunLocation>
     <ammoAmount>940</ammoAmount>

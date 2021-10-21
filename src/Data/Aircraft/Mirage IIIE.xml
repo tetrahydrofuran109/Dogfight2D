@@ -49,6 +49,8 @@
     <engineName>ATAR-9C</engineName>
     <engineNumber>1</engineNumber>
     <fuelCapacity>2313</fuelCapacity>
+    <flareAmount>30</flareAmount>
+    <chaffAmount>30</chaffAmount>
     <gunName>ADEN</gunName>
     <gunName>ADEN</gunName>
     <gunLocation>0</gunLocation>

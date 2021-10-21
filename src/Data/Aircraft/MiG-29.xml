@@ -49,6 +49,8 @@
     <engineName>RD-33</engineName>
     <engineNumber>2</engineNumber>
     <fuelCapacity>3400</fuelCapacity>
+    <flareAmount>15</flareAmount>
+    <chaffAmount>30</chaffAmount>
     <gunName>Gsh-30</gunName>
     <gunLocation>0</gunLocation>
     <ammoAmount>150</ammoAmount>

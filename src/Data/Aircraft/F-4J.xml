@@ -49,6 +49,8 @@
     <engineName>J79-GE-10</engineName>
     <engineNumber>2</engineNumber>
     <fuelCapacity>6029</fuelCapacity>
+    <flareAmount>45</flareAmount>
+    <chaffAmount>45</chaffAmount>
     <glimit>8.5</glimit>
     <hasBrake>true</hasBrake>
     <helmet>VTAS</helmet>

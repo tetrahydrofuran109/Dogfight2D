@@ -49,6 +49,8 @@
     <engineName>M53-5</engineName>
     <engineNumber>1</engineNumber>
     <fuelCapacity>2950</fuelCapacity>
+    <flareAmount>30</flareAmount>
+    <chaffAmount>60</chaffAmount>
     <gunName>ADEN</gunName>
     <gunName>ADEN</gunName>
     <gunLocation>0</gunLocation>
