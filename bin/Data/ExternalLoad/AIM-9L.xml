@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
+    <antiJam>40</antiJam>
     <name>AIM-9L</name>
     <property>InfraredAAM</property>
     <mass>84.3</mass>
