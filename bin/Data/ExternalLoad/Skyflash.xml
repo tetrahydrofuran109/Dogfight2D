@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalLoadData>
   <ExternalLoad>
-    <antiJam>70</antiJam>
+    <antiJam>45</antiJam>
     <name>Skyflash</name>
     <property>SemiRadarAAM</property>
     <mass>193</mass>

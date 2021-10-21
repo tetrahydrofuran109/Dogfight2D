@@ -6,7 +6,7 @@
     <scanInterval>6</scanInterval>
     <maxLookDownAngle>20</maxLookDownAngle>
     <maxTagertNumber>2</maxTagertNumber>
-    <showDistanceRange>5000</showDistanceRange>
+    <showDistanceRange>3000</showDistanceRange>
     <hasIRST>true</hasIRST>
     <IRSTRange>15000</IRSTRange>
     <IRSTField>60</IRSTField>
