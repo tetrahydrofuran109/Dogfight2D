@@ -7,7 +7,7 @@
     <mass>220</mass>
     <refArea>0.0327</refArea>
     <cl>4.18</cl>
-    <duration>1500</duration>
+    <duration>2000</duration>
     <subSonicCd0>0.58</subSonicCd0>
     <superSonicCd0>0.36</superSonicCd0>
     <maxLoadFactor>35</maxLoadFactor>
