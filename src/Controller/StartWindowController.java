@@ -315,6 +315,7 @@ public class StartWindowController implements Initializable  {
 				myPlane.getItems().add("F-4J");
 				myPlane.getItems().add("F-15C");
 				myPlane.getItems().add("F-16A Block 15");
+				myPlane.getItems().add("FA-18C");
 		   }
 		   else if(myFaction.getValue().contains("Russia"))
 		   {
@@ -326,6 +327,7 @@ public class StartWindowController implements Initializable  {
 				myPlane.getItems().add("MiG-23ML");
 				myPlane.getItems().add("MiG-29");
 				myPlane.getItems().add("Su-27");
+				myPlane.getItems().add("Su-33");
 		   }
 		   else if(myFaction.getValue().contains("China"))
 		   {
