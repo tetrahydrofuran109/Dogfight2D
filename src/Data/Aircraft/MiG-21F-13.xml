@@ -45,14 +45,14 @@
     <cd0>0.026</cd0>
     <cd0>0.025</cd0>
     <cd0>0.025</cd0>
-    <designWeight>6090</designWeight>
+    <designWeight>7100</designWeight>
     <engineName>R11F-300</engineName>
     <engineNumber>1</engineNumber>
     <fuelCapacity>1838</fuelCapacity>
     <gunName>NR-30</gunName>
     <gunLocation>0</gunLocation>
     <ammoAmount>30</ammoAmount>
-    <glimit>8</glimit>
+    <glimit>7</glimit>
     <hasBrake>true</hasBrake>
     <KCl>0.025</KCl>
     <life>100</life>
