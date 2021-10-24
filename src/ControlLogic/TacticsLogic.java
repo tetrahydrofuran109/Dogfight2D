@@ -62,7 +62,7 @@ public class TacticsLogic {
 	
 	public static double DragCorrection(ExternalLoad missle)
 	{
-		return Math.pow(missle.getPerformance().getRefArea()*missle.getPerformance().getSuperSonicCd0()/0.024,3);
+		return missle.getPerformance().getRefArea()*missle.getPerformance().getSuperSonicCd0()/0.024;
 	}
 	
 	/**

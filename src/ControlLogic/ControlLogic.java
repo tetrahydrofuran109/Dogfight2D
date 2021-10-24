@@ -297,7 +297,7 @@ public class ControlLogic {
 						}
 					}
 					
-					if(this.getMyAircraft().getExternalLoadList().get(i).getPerformance().getProperty().contains("SemiRadarAAM"))
+					if(this.getMyAircraft().getExternalLoadList().get(i).getPerformance().getProperty().contains("RadarAAM"))
 					{
 						if(this.getMyAircraft().getExternalLoadList().get(i).getPerformance().getProperty().contains("Command")||this.getMyAircraft().getExternalLoadList().get(i).getCapturedObject()!=null)
 						{
