@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalLoadData>
+  <ExternalLoad>
+    <antiJam>50</antiJam>
+    <name>AIM-120A</name>
+    <property>ActiveRadarAAMWithCommand</property>
+    <mass>152</mass>
+    <refArea>0.025</refArea>
+    <cl>7.2</cl>
+    <duration>2000</duration>
+    <subSonicCd0>0.55</subSonicCd0>
+    <superSonicCd0>0.34</superSonicCd0>
+    <maxLoadFactor>50</maxLoadFactor>
+    <maxAttackField>180</maxAttackField>
+    <thrustA>20357</thrustA>
+    <thrustATime>179</thrustATime>
+    <thrustB>3604</thrustB>
+    <thrustBTime>437</thrustBTime>
+    <guideTimeInterval>0</guideTimeInterval>
+    <guideField>60</guideField>
+    <lockRange>22000</lockRange>
+    <lockField>60</lockField>
+    <TNTMass>23</TNTMass>
+    <explosionRange>12.2</explosionRange>
+  </ExternalLoad>
+</ExternalLoadData>
