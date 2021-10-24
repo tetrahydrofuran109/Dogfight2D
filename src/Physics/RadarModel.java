@@ -22,6 +22,7 @@ public class RadarModel {
 	
 	private int RadarScanPointer;
 	private ArrayList<Object> radarTargetList;
+	private ArrayList<Object> hasAttackedObject;
 	
 	private boolean isRadarWarning;
 	
@@ -114,27 +115,54 @@ public class RadarModel {
 	public void RadarGuide(Object object)
 	{
 		if(radarTargetList.contains(object))
-		{			
+		{
 			for(int j=0;j<owner.getExternalLoadList().size();j++)
 			{
-				if(owner.getExternalLoadList().get(j).getPerformance().getProperty().contains("RadarAAM"))
+				if(owner.getExternalLoadList().get(j).getPerformance().getProperty().contains("RadarAAM")&&owner.getExternalLoadList().get(j).isEffective()==true)
 				{
+					
 					if(Locating.getDistance(owner, object)<=RadarModel.getActualDetecRange(object.getRCS(), owner.getExternalLoadList().get(j).getPerformance().getLockRange()))
 					{
+						RefreshAttackedTarget();
 						if(owner.getExternalLoadList().get(j).getCapturedObject()==null)
 						{
 							owner.getExternalLoadList().get(j).setCapturedObject(object);
 						}
-						else if(Locating.getDistance(owner.getExternalLoadList().get(j), object)<Locating.getDistance(owner.getExternalLoadList().get(j), owner.getExternalLoadList().get(j).getCapturedObject()))
+						else if(!this.hasAttackedObject.contains(object))
+						{
+							Object temp = owner.getExternalLoadList().get(j).getCapturedObject();
+							owner.getExternalLoadList().get(j).setCapturedObject(object);
+							RefreshAttackedTarget();
+							if(!this.hasAttackedObject.contains(temp))
+							{
+								owner.getExternalLoadList().get(j).setCapturedObject(temp);
+							}
+						}
+						/*else if(Locating.getDistance(owner.getExternalLoadList().get(j), object)<Locating.getDistance(owner.getExternalLoadList().get(j), owner.getExternalLoadList().get(j).getCapturedObject()))
 						{
 							owner.getExternalLoadList().get(j).setCapturedObject(object);
-						}
+							this.hasAttackedObject.add(object);
+						}*/
 					}
 				}
 			}
 		}
 	}
-	
+
+	public void RefreshAttackedTarget()
+	{
+		this.hasAttackedObject = new ArrayList<Object>();
+		for(int j=0;j<owner.getExternalLoadList().size();j++)
+		{
+			if(owner.getExternalLoadList().get(j).getPerformance().getProperty().contains("RadarAAM")&&owner.getExternalLoadList().get(j).isEffective()==true)
+			{
+				if(this.owner.getExternalLoadList().get(j).getCapturedObject()!=null)
+				{
+					this.hasAttackedObject.add(this.owner.getExternalLoadList().get(j).getCapturedObject());
+				}
+			}
+		}
+	}
 	/**
 	 * give the missle the target detected by helmet aimer
 	 * @param object the target

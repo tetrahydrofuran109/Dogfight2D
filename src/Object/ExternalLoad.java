@@ -366,6 +366,7 @@ public class ExternalLoad extends Object {
 			//System.out.println(this.getX());
 			//System.out.println(this.getY());
 			//System.out.println("");
+			//System.out.println(this.getCapturedObject().getSignature());
 			
 			if(this.Duration == 0)
 			{
